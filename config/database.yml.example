@@ -1,0 +1,11 @@
+development: &development
+  adapter: postgresql
+  encoding: unicode
+  database: fakebook_development
+  username: postgres
+  password: postgres
+
+test:
+  <<: *development
+  database: fakebook_test
+
